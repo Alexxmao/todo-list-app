@@ -36,7 +36,7 @@ export default function TodoList({todos, deleteTodo}) {
             >
                 {todos.map(todo => (
                     <HStack>
-                        <Text>{todo.body}</Text>
+                        <Text>{ todo.body }</Text>
                         <Spacer/>
                         <IconButton aria-label="trash" icon={<FaTrash/>} isRound onClick={() => deleteTodo(todo.id)}/>
                     </HStack>
