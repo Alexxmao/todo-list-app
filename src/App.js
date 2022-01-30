@@ -10,16 +10,6 @@ import TodoList from "./components/TodoList";
 import AddTodo from './components/AddTodo';
 
 export default function App() {
-  const initialTodos = [
-    {
-        id: 1,
-        body: 'get your money up not your funny up',
-    },
-    {
-        id: 2,
-        body: 'why does my text not show up now???'
-    },
-];
 
 const [todos, setTodos] = useState(
   () => JSON.parse(localStorage.getItem("todos")) || []
